@@ -1,0 +1,80 @@
+/*
+ * 换肤基建：变量名与后端 themes_themes.config 的 JSON 键名一字不差。
+ * 变量清单（13 个）：
+ *   --color-primary / --color-primary-soft / --color-secondary / --color-accent
+ *   --color-bg / --color-surface / --color-surface-2
+ *   --color-text / --color-text-muted / --color-border
+ *   --shadow-card / --radius-card / --gradient-hero
+ * 内置 4 套皮肤：sakura（默认）/ ocean / midnight / matcha。
+ * 颜色值取自 backend/apps/themes/management/commands/seed_themes.py，保证前后端一致。
+ */
+
+/* ---------- 默认值（sakura），data-theme 缺失时兜底 ---------- */
+:root,
+[data-theme='sakura'] {
+  --color-primary: #ff8fb1;
+  --color-primary-soft: #ffd9e5;
+  --color-secondary: #b5e5ff;
+  --color-accent: #ffd966;
+  --color-bg: #fff5f8;
+  --color-surface: #ffffff;
+  --color-surface-2: #fff0f5;
+  --color-text: #4a3b44;
+  --color-text-muted: #9c8b93;
+  --color-border: #ffd9e5;
+  --shadow-card: 0 6px 20px rgba(255, 143, 177, 0.25);
+  --radius-card: 20px;
+  --gradient-hero: linear-gradient(135deg, #ffd9e5 0%, #b5e5ff 100%);
+}
+
+/* ---------- ocean 天空蓝 ---------- */
+[data-theme='ocean'] {
+  --color-primary: #7bb8ff;
+  --color-primary-soft: #dcebff;
+  --color-secondary: #ffd1e8;
+  --color-accent: #ffe28a;
+  --color-bg: #f3f8ff;
+  --color-surface: #ffffff;
+  --color-surface-2: #edf4ff;
+  --color-text: #31435c;
+  --color-text-muted: #8899b0;
+  --color-border: #d6e6ff;
+  --shadow-card: 0 6px 20px rgba(123, 184, 255, 0.25);
+  --radius-card: 20px;
+  --gradient-hero: linear-gradient(135deg, #dcebff 0%, #d6fbff 100%);
+}
+
+/* ---------- midnight 深夜黑（暗色） ---------- */
+[data-theme='midnight'] {
+  color-scheme: dark;
+  --color-primary: #b889ff;
+  --color-primary-soft: #3a2f55;
+  --color-secondary: #6fd8ff;
+  --color-accent: #ffd166;
+  --color-bg: #17141f;
+  --color-surface: #221e2d;
+  --color-surface-2: #2b2638;
+  --color-text: #ede7f6;
+  --color-text-muted: #9c93b5;
+  --color-border: #38314b;
+  --shadow-card: 0 6px 22px rgba(0, 0, 0, 0.45);
+  --radius-card: 20px;
+  --gradient-hero: linear-gradient(135deg, #2b2638 0%, #3a2f55 100%);
+}
+
+/* ---------- matcha 抹茶绿 ---------- */
+[data-theme='matcha'] {
+  --color-primary: #7fc8a9;
+  --color-primary-soft: #dcf2e7;
+  --color-secondary: #ffe9b8;
+  --color-accent: #ffb4a2;
+  --color-bg: #f5fbf7;
+  --color-surface: #ffffff;
+  --color-surface-2: #edf8f1;
+  --color-text: #33453d;
+  --color-text-muted: #8aa096;
+  --color-border: #d8ede2;
+  --shadow-card: 0 6px 20px rgba(127, 200, 169, 0.25);
+  --radius-card: 20px;
+  --gradient-hero: linear-gradient(135deg, #dcf2e7 0%, #ffe9b8 100%);
+}

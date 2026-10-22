@@ -1,0 +1,43 @@
+# ---- 环境变量 / 密钥（绝不入库）----
+.env
+.env.*
+*.env
+!.env.example
+!**/.env.example
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- Django ----
+db.sqlite3
+*.sqlite3
+backend/staticfiles/
+backend/uploads/*
+!backend/uploads/.gitkeep
+!backend/uploads/avatar/.gitkeep
+!backend/uploads/post/.gitkeep
+!backend/uploads/board/.gitkeep
+*.log
+
+# ---- 前端 ----
+node_modules/
+dist/
+frontend/.vite/
+.vite/
+*.local
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

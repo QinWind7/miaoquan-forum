@@ -1,0 +1,19 @@
+# ---- 核心 ----
+Django~=5.2
+djangorestframework~=3.15
+djangorestframework-simplejwt~=5.5
+
+# ---- 数据库驱动 ----
+# 优先 mysqlclient（快）；若本机缺少 MSVC 编译环境导致安装失败，改用：
+#   PyMySQL~=1.1  （并在 config/__init__.py 中执行 pymysql.install_as_MySQLdb()）
+mysqlclient~=2.2
+
+# ---- 跨域 / 配置 / 接口文档 ----
+django-cors-headers~=4.7
+django-environ~=0.12
+drf-spectacular~=0.28
+
+# ---- 业务支撑 ----
+Pillow~=11.0
+django-filter~=25.1
+argon2-cffi~=23.1
