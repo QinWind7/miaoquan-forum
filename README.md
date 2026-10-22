@@ -6,11 +6,7 @@
 
 ## 在线体验
 
-| 入口 | 地址 |
-| --- | --- |
-| 网站首页 | <http://121.43.108.53> |
-| 接口文档（Swagger） | <http://121.43.108.53/api/docs/> |
-| 管理后台 | <http://121.43.108.53/admin/> |
+**<http://121.43.108.53>**
 
 > 网站支持自助注册，注册后即可体验发帖、评论、私聊、换肤等全部社区功能。
 
@@ -204,7 +200,7 @@ DB_PASSWORD='你的强密码' sudo -E bash deploy.sh
 | GET | `/api/v1/notifications/unread-summary/` | 未读汇总（通知 + 私聊） |
 | GET | `/api/v1/notifications/` | 通知列表 |
 
-完整接口与参数说明见在线 Swagger：<http://121.43.108.53/api/docs/>
+完整接口与参数说明可在本地启动后访问 `/api/docs/` 查看。
 
 ---
 
